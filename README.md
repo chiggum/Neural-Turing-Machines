@@ -27,8 +27,8 @@ test_path = path_to_npz_model_parameters_file
 ```
 
 ## Other NTM Implementations
-- @fumin very nicely explained NTM with a working implementation in GO. Check out: https://github.com/fumin/ntm
-- Another NTM implementation in Theano by @shawntawn. Check out: https://github.com/shawntan/neural-turing-machines
+- fumin very nicely explained NTM with a working implementation in GO. Check out: https://github.com/fumin/ntm
+- Another NTM implementation in Theano by shawntawn. Check out: https://github.com/shawntan/neural-turing-machines
 
 ## Future works
 - Making NTM to work on other tasks described in the paper.
