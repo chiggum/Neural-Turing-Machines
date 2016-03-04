@@ -14,13 +14,13 @@ Here is the link to the paper: http://arxiv.org/abs/1410.5401
 ![Alt ntm-on-test-seq-of-len-66](plots/ntm-info-COPY-10-120-66-2016-03-04-16-18-50.png)
 
 ## Usage
-For training: In ntm.py set
+For training: In `ntm.py` set
 ```
 to_test = False
 ```
 To run your trained model or a pre-trained model from `model` directory,
 
-In ntm.py set
+In `ntm.py` set
 ```
 to_test = True
 test_path = path_to_npz_model_parameters_file
