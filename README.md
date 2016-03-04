@@ -1,5 +1,6 @@
 # Neural-Turing-Machines
-An attempt at replicating Deepmind's Neural Turing Machines in Theano
+An attempt at replicating Deepmind's Neural Turing Machines in Theano.
+
 Here is the link to the paper: http://arxiv.org/abs/1410.5401
 
 ## Results
@@ -17,7 +18,7 @@ For training: In ntm.py set
 ```
 to_test = False
 ```
-To run your trained model or a pre-trained model from model directory,
+To run your trained model or a pre-trained model from `model` directory,
 
 In ntm.py set
 ```
@@ -26,8 +27,8 @@ test_path = path_to_npz_model_parameters_file
 ```
 
 ## Other NTM Implementations
-- fumin very nicely explained NTM with a working implementation in GO. Check out: https://github.com/fumin/ntm
-- Another NTM implementation in Theano by shawntawn. Check out: https://github.com/shawntan/neural-turing-machines
+- @fumin very nicely explained NTM with a working implementation in GO. Check out: https://github.com/fumin/ntm
+- Another NTM implementation in Theano by @shawntawn. Check out: https://github.com/shawntan/neural-turing-machines
 
 ## Future works
 - Making NTM to work on other tasks described in the paper.
