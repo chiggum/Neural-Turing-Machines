@@ -36,7 +36,7 @@ test_path = path_to_npz_model_parameters_file
 ```
 
 ## Thesis Report
-Please visit this [link](https://chiggum.github.io/Neural-Turing-Machines/Report/Report_MA499.pdf) for my thesis report.
+Please visit this [link](https://chiggum.github.io/Neural-Turing-Machines/Report/Report_MA499.pdf) for my bachelor's thesis report.
 
 ## Presentation
 Please visit this [link](https://chiggum.github.io/Neural-Turing-Machines/presentation/ram_pres_with_notes.pdf) for a presentation with comments of my thesis.
