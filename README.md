@@ -1,5 +1,5 @@
 # Neural-Turing-Machines
-An attempt at replicating Deepmind's Neural Turing Machines in Theano as a part of my bachelor thesis.
+An attempt at replicating Deepmind's Neural Turing Machines in Theano as a part of my bachelor's thesis.
 
 Here is the link to the paper: http://arxiv.org/abs/1410.5401
 
@@ -36,10 +36,10 @@ test_path = path_to_npz_model_parameters_file
 ```
 
 ## Thesis Report
-Please visit this [link](https://chiggum.github.io/Neural-Turing-Machines/report/Report_MA499.pdf) for my thesis report.
+Please visit this [link](https://chiggum.github.io/Neural-Turing-Machines/Report/Report_MA499.pdf) for my thesis report.
 
 ## Presentation
-Please visit this [link](https://chiggum.github.io/Neural-Turing-Machines/presentation/ram_pres_with_notes.pdf) for a presentation of my thesis.
+Please visit this [link](https://chiggum.github.io/Neural-Turing-Machines/presentation/ram_pres_with_notes.pdf) for a presentation with comments of my thesis.
 
 ## Reading material
 Check out the `reading material` directory of this project on github for some relevant papers related to RAM based models.
