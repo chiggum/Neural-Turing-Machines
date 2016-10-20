@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Neural-Turing-Machines : An attempt at replicating Deepmind&#39;s Neural Turing Machines in Theano as a part of my bachelor&#39;s thesis">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Neural-Turing-Machines</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/chiggum/Neural-Turing-Machines">View on GitHub</a>
+
+          <h1 id="project_title">Neural-Turing-Machines</h1>
+          <h2 id="project_tagline">An attempt at replicating Deepmind&#39;s Neural Turing Machines in Theano as a part of my bachelor&#39;s thesis</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/chiggum/Neural-Turing-Machines/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/chiggum/Neural-Turing-Machines/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="neural-turing-machines" class="anchor" href="#neural-turing-machines" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Neural-Turing-Machines</h1>
+
+<p>An attempt at replicating Deepmind's Neural Turing Machines in Theano as a part of my bachelor thesis.</p>
+
+<p>Here is the link to the paper: <a href="http://arxiv.org/abs/1410.5401">http://arxiv.org/abs/1410.5401</a></p>
+
+<h2>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Results</h2>
+
+<ul>
+<li>Currently, only COPY task is implemented.</li>
+<li>Training is done on sequences of length varying from 1 to 20 and width 8.</li>
+<li>With version 1 of NTM which has a single read-write head.</li>
+</ul>
+
+<p><img src="https://chiggum.github.io/Neural-Turing-Machines/plots/ntm_learning_curve-COPY-20-2016-03-03-15-25-49/ntm-info-COPY-10-120-66-2016-03-04-16-18-50.png" alt="Alt ntm-v1-on-test-seq-of-len-66"></p>
+
+<ul>
+<li>Learning Curve corresponding to version 1 of NTM.</li>
+</ul>
+
+<p><img src="https://chiggum.github.io/Neural-Turing-Machines/plots/ntm_learning_curve-COPY-20-2016-03-03-15-25-49/ntm_learning_curve-COPY-20-2016-03-03-15-25-49.txt.png" alt="Alt ntm-v1-learning-curve"></p>
+
+<ul>
+<li>With version 2 of NTM which has separate heads for reading and writing.</li>
+</ul>
+
+<p><img src="https://chiggum.github.io/Neural-Turing-Machines/plots/ntm2_learning_curve-COPY-5-2016-03-12-22-14-27/ntm2-info-COPY-10-120-34-2016-03-13-07-01-52.png" alt="Alt ntm-v2-on-test-seq-of-len-34"></p>
+
+<ul>
+<li>Learning Curve corresponding to version 2 of NTM.</li>
+</ul>
+
+<p><img src="https://chiggum.github.io/Neural-Turing-Machines/plots/ntm2_learning_curve-COPY-5-2016-03-12-22-14-27/ntm2_learning_curve-COPY-5-2016-03-12-22-14-27_run_avg.png" alt="Alt ntm-v2-learning-curve"></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>For training: In <code>ntm_v*.py</code> set</p>
+
+<pre><code>to_test = False
+</code></pre>
+
+<p>To run your trained model or a pre-trained model from <code>model</code> directory,</p>
+
+<p>In <code>ntm_v*.py</code> set</p>
+
+<pre><code>to_test = True
+test_path = path_to_npz_model_parameters_file
+</code></pre>
+
+<h2>
+<a id="thesis-report" class="anchor" href="#thesis-report" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thesis Report</h2>
+
+<p>Please visit this <a href="https://chiggum.github.io/Neural-Turing-Machines/report/Report_MA499.pdf">link</a> for my thesis report.</p>
+
+<h2>
+<a id="presentation" class="anchor" href="#presentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Presentation</h2>
+
+<p>Please visit this <a href="https://chiggum.github.io/Neural-Turing-Machines/presentation/ram_pres_with_notes.pdf">link</a> for a presentation of my thesis.</p>
+
+<h2>
+<a id="reading-material" class="anchor" href="#reading-material" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reading material</h2>
+
+<p>Check out the <code>reading material</code> directory of this project on github for some relevant papers related to RAM based models.</p>
+
+<h2>
+<a id="other-ntm-implementations" class="anchor" href="#other-ntm-implementations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other NTM Implementations</h2>
+
+<ul>
+<li>fumin very nicely explained NTM with a working implementation in GO. Check out: <a href="https://github.com/fumin/ntm">https://github.com/fumin/ntm</a>
+</li>
+<li>Another NTM implementation in Theano by shawntawn. Check out: <a href="https://github.com/shawntan/neural-turing-machines">https://github.com/shawntan/neural-turing-machines</a>
+</li>
+</ul>
+
+<h2>
+<a id="future-works" class="anchor" href="#future-works" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Future works</h2>
+
+<ul>
+<li>Making NTM to work on other tasks described in the paper.</li>
+<li>Using NTM to make agents for playing games (Deep reinforcement learning).</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Neural-Turing-Machines maintained by <a href="https://github.com/chiggum">chiggum</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
