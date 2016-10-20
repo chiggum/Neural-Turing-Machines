@@ -6,21 +6,22 @@ Here is the link to the paper: http://arxiv.org/abs/1410.5401
 ## Results
 - Currently, only COPY task is implemented.
 - Training is done on sequences of length varying from 1 to 20 and width 8.
-- It takes ~200k iterations (training samples) to get a well trained model.
-- The model is able to nicely generalize on sequences of length above 100 with zero hamming error.
-- Have a look at `plots` directory.
-- Following figure shows the generalization on a test sequence of length 66.
+- With version 1 of NTM which has a single read-write head.
 
-![Alt ntm-on-test-seq-of-len-66](plots/ntm-info-COPY-10-120-66-2016-03-04-16-18-50.png)
+![Alt ntm-v1-on-test-seq-of-len-66](https://chiggum.github.io/Neural-Turing-Machines/plots/ntm_learning_curve-COPY-20-2016-03-03-15-25-49/ntm-info-COPY-10-120-66-2016-03-04-16-18-50.png)
+
+- With version 2 of NTM which has separate heads for reading and writing.
+
+![Alt ntm-v2-on-test-seq-of-len-34](https://chiggum.github.io/Neural-Turing-Machines/plots/ntm2_learning_curve-COPY-5-2016-03-12-22-14-27/ntm2-info-COPY-10-120-34-2016-03-13-07-01-52.png)
 
 ## Usage
-For training: In `ntm.py` set
+For training: In `ntm_v*.py` set
 ```
 to_test = False
 ```
 To run your trained model or a pre-trained model from `model` directory,
 
-In `ntm.py` set
+In `ntm_v*.py` set
 ```
 to_test = True
 test_path = path_to_npz_model_parameters_file
@@ -32,4 +33,4 @@ test_path = path_to_npz_model_parameters_file
 
 ## Future works
 - Making NTM to work on other tasks described in the paper.
-- Using NTM for Machine Translation.
+- Using NTM to make agents for playing games (Deep reinforcement learning).
