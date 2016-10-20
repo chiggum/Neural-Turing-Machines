@@ -10,9 +10,17 @@ Here is the link to the paper: http://arxiv.org/abs/1410.5401
 
 ![Alt ntm-v1-on-test-seq-of-len-66](https://chiggum.github.io/Neural-Turing-Machines/plots/ntm_learning_curve-COPY-20-2016-03-03-15-25-49/ntm-info-COPY-10-120-66-2016-03-04-16-18-50.png)
 
+- Learning Curve corresponding to version 1 of NTM.
+
+![Alt ntm-v1-learning-curve](https://chiggum.github.io/Neural-Turing-Machines/plots/ntm_learning_curve-COPY-20-2016-03-03-15-25-49/ntm_learning_curve-COPY-20-2016-03-03-15-25-49.txt.png)
+
 - With version 2 of NTM which has separate heads for reading and writing.
 
 ![Alt ntm-v2-on-test-seq-of-len-34](https://chiggum.github.io/Neural-Turing-Machines/plots/ntm2_learning_curve-COPY-5-2016-03-12-22-14-27/ntm2-info-COPY-10-120-34-2016-03-13-07-01-52.png)
+
+- Learning Curve corresponding to version 2 of NTM.
+
+![Alt ntm-v2-learning-curve](https://chiggum.github.io/Neural-Turing-Machines/plots/ntm2_learning_curve-COPY-5-2016-03-12-22-14-27/ntm2_learning_curve-COPY-5-2016-03-12-22-14-27_run_avg.png)
 
 ## Usage
 For training: In `ntm_v*.py` set
