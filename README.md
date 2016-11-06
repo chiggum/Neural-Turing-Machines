@@ -1,6 +1,8 @@
 # Neural-Turing-Machines
 An attempt at replicating Deepmind's Neural Turing Machines in Theano as a part of my bachelor's thesis.
 
+Advisor: [Prof. Amit Sethi](http://www.iitg.ernet.in/amitsethi/)
+
 Here is the link to the paper: http://arxiv.org/abs/1410.5401
 
 ## Results
