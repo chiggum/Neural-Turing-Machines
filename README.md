@@ -4,13 +4,13 @@ An attempt at replicating Deepmind's Neural Turing Machines in Theano as a part 
 Here is the link to the paper: http://arxiv.org/abs/1410.5401
 
 ## Results
-- Currently, only COPY task is implemented.
-- Training is done on sequences of length varying from 1 to 20 and width 8.
+- Following are the results on COPY task of the NTM I implemented from scratch.
+- Training is done on sequences of length varying from 1 to 20 and width 8 (bits per element in a sequence).
 - With version 1 of NTM which has a single read-write head.
 
 ![Alt ntm-v1-on-test-seq-of-len-66](https://chiggum.github.io/Neural-Turing-Machines/plots/ntm_learning_curve-COPY-20-2016-03-03-15-25-49/ntm-info-COPY-10-120-66-2016-03-04-16-18-50.png)
 
-- Learning Curve corresponding to version 1 of NTM.
+- Learning Curve corresponding to version 1 of NTM (Sorry I din't compute the sliding window average in version 1).
 
 ![Alt ntm-v1-learning-curve](https://chiggum.github.io/Neural-Turing-Machines/plots/ntm_learning_curve-COPY-20-2016-03-03-15-25-49/ntm_learning_curve-COPY-20-2016-03-03-15-25-49.txt.png)
 
@@ -39,7 +39,7 @@ test_path = path_to_npz_model_parameters_file
 Please visit this [link](https://chiggum.github.io/Neural-Turing-Machines/Report/Report_MA499.pdf) for my bachelor's thesis report.
 
 ## Presentation
-Please visit this [link](https://chiggum.github.io/Neural-Turing-Machines/presentation/ram_pres_with_notes.pdf) for a presentation with comments of my thesis.
+Please visit this [link](https://chiggum.github.io/Neural-Turing-Machines/presentation/ram_pres_with_notes.pdf) for a presentation with comments, of my thesis.
 
 ## Reading material
 Check out the `reading material` directory of this project on github for some relevant papers related to RAM based models.
